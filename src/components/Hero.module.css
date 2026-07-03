@@ -250,9 +250,12 @@
   .headline { font-size: 1.9rem; margin-bottom: 16px; }
   .sub { font-size: 1.05rem; margin-bottom: 30px; }
   .glassCard { padding: 30px 20px; border-radius: 20px; }
-  .photoCol { height: 320px; }
+  .photoCol { height: 360px; margin-top: 30px; }
   .mainCard { width: 85%; }
-  .accentCard { width: 55%; }
+  .mainCard img { height: 320px; }
+  .accentCard { width: 65%; left: -10px; bottom: 0; }
+  .accentCard img { height: 180px; }
+  .floatBadge { left: -15px; top: -10px; transform: scale(0.85); }
   .statsBar { flex-direction: column; gap: 0; }
   .statItem + .statItem { border-left: none; border-top: 1px solid rgba(0,0,0,0.05); }
 }
