@@ -247,8 +247,9 @@
   .blobOrange { width: 500px; height: 500px; }
 }
 @media (max-width: 640px) {
-  .headline { font-size: 2.2rem; }
-  .glassCard { padding: 30px 20px; border-radius: 24px; }
+  .headline { font-size: 1.9rem; margin-bottom: 16px; }
+  .sub { font-size: 1.05rem; margin-bottom: 30px; }
+  .glassCard { padding: 30px 20px; border-radius: 20px; }
   .photoCol { height: 320px; }
   .mainCard { width: 85%; }
   .accentCard { width: 55%; }
