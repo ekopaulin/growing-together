@@ -1,0 +1,256 @@
+/* ── CONTACT SECTION ── */
+.contact {
+  background: var(--white);
+  padding: 60px 0 100px 0;
+}
+
+/* ── SEPARATOR ── */
+.separatorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 70px;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(245, 166, 35, 0.25));
+  border-radius: 2px;
+}
+
+.line:last-child {
+  background: linear-gradient(270deg, transparent, rgba(245, 166, 35, 0.25));
+}
+
+.separatorIcon {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 4px 10px rgba(245, 166, 35, 0.3));
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* Centered header */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.sectionTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.gold { color: var(--gold); }
+.sectionSub {
+  font-size: 1rem;
+  color: var(--gray-700);
+  line-height: 1.75;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* TWO-COL GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ── LEFT — Info card (navy) ── */
+.infoCard {
+  background: var(--navy);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Photo at top of card */
+.infoPhoto {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.infoPhoto img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center 30%;
+  display: block;
+}
+.photoOverlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(27,42,74,0.1) 0%, rgba(27,42,74,0.85) 100%);
+}
+.photoBadge {
+  position: absolute;
+  bottom: 20px; left: 24px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.photoBadge span:first-child { font-size: 1.4rem; }
+.photoBadge span:nth-child(2) {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: 1.1rem; color: var(--white);
+}
+.photoBadge small { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+
+/* Info rows */
+.infoBody {
+  padding: 28px 28px 24px;
+  display: flex; flex-direction: column; gap: 0;
+}
+.infoRow {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.infoRow:last-of-type { border-bottom: none; }
+
+.infoIconWrap {
+  width: 40px; height: 40px; flex-shrink: 0;
+  background: rgba(245,166,35,0.15);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+}
+.infoText {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.infoLabel {
+  font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--gold);
+}
+.infoValue {
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 0.95rem;
+  color: var(--white);
+}
+.infoSub {
+  font-size: 0.78rem; color: rgba(255,255,255,0.45);
+}
+
+/* Social dots */
+.socialsRow {
+  display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;
+}
+.socialDot {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; color: rgba(255,255,255,0.7);
+  transition: all var(--transition); cursor: pointer;
+}
+.socialDot:hover {
+  background: var(--s-color, var(--gold));
+  border-color: transparent;
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* ── RIGHT — Form card (white) ── */
+.formCard {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  border: 1.5px solid var(--gray-200);
+  padding: 44px 40px;
+  box-shadow: var(--shadow-md);
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-weight: 900; font-size: 1.5rem;
+  color: var(--navy); margin-bottom: 4px;
+}
+.formSub {
+  font-size: 0.85rem; color: var(--gray-500);
+  margin-bottom: 28px;
+}
+
+/* Form rows & groups */
+.formRow {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  margin-bottom: 0;
+}
+.formGroup {
+  display: flex; flex-direction: column; gap: 7px;
+  margin-bottom: 20px;
+}
+.formGroup label {
+  font-size: 0.8rem; font-weight: 700; color: var(--navy);
+  text-transform: uppercase; letter-spacing: 0.07em;
+}
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  background: var(--off-white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 13px 16px;
+  font-family: var(--font-body); font-size: 0.95rem;
+  color: var(--black); outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+  appearance: none; -webkit-appearance: none;
+}
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: var(--gold);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(245,166,35,0.15);
+}
+.formGroup select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A8AA8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.formGroup textarea { resize: vertical; min-height: 130px; }
+
+.formNote {
+  text-align: center; font-size: 0.78rem;
+  color: var(--gray-500); margin-top: 14px;
+}
+
+/* Success state */
+.success {
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; padding: 40px 20px;
+}
+.successIcon {
+  font-size: 3.5rem;
+  width: 80px; height: 80px;
+  background: var(--gold-light);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.success h3 {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: 1.5rem; color: var(--navy); margin-bottom: 10px;
+}
+.success p { color: var(--gray-700); font-size: 0.95rem; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; gap: 28px; }
+  .infoPhoto { height: 180px; }
+}
+@media (max-width: 540px) {
+  .formCard { padding: 28px 20px; }
+  .formRow { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "about": "À propos",
+    "programs": "Programmes",
+    "gallery": "Album",
+    "impact": "Impact",
+    "contact": "Contact",
+    "donate": "Nous soutenir"
+  },
+  "hero": {
+    "badge": "Encadrement & Épanouissement",
+    "title": "Butiner, Grandir,<br/>S'épanouir.",
+    "subtitle": "Growing Together est une famille engagée à Yaoundé. Nous accompagnons les jeunes vers l'excellence scolaire, le bien-être émotionnel et l'insertion sociale.",
+    "cta_donate": "Faire un don 🐝",
+    "cta_discover": "Découvrir nos actions"
+  },
+  "about": {
+    "badge": "🐝 Depuis 2021",
+    "title1": "Une ruche vivante",
+    "title2": "à Yaoundé",
+    "subtitle": "Growing Together est née d'une conviction simple : aucun jeune ne devrait grandir seul dans la tempête. Nos bénévoles sont eux-mêmes des jeunes qui donnent de leur temps et de leurs ressources.",
+    "stats_youth": "Jeunes suivis<br/>chaque année",
+    "stats_years": "D'existence",
+    "stats_volunteers": "Bénévoles",
+    "believe1": "Nous croyons en",
+    "believe2": "chaque jeune",
+    "desc": "Growing Together est une association d'encadrement et d'épanouissement des jeunes. Nous sommes là où les structures traditionnelles et les filets de sécurité familiale et sociale sont trop fragiles, pour éduquer, soutenir et faire grandir.",
+    "values": {
+      "solidarity": {
+        "label": "Solidarité authentique",
+        "desc": "Nous nous entraidons comme une ruche, chacun apportant sa contribution."
+      },
+      "kindness": {
+        "label": "Bienveillance",
+        "desc": "Chaque jeune est accueilli avec douceur, sans jugement ni condition."
+      },
+      "commitment": {
+        "label": "Engagement bénévole",
+        "desc": "Nos membres donnent de leur temps et de leurs ressources personnelles."
+      },
+      "inclusion": {
+        "label": "Inclusion totale",
+        "desc": "Aucun enfant laissé de côté : handicap, précarité, vulnérabilité."
+      }
+    },
+    "cta_programs": "Nos programmes →",
+    "cta_support": "Nous soutenir"
+  },
+  "programs": {
+    "title1": "Nos",
+    "title2": "5 programmes",
+    "title3": "d'action",
+    "desc": "Parce que chaque jeune est unique, nous avons développé une approche à 360° pour répondre à tous les besoins : éducation, santé mentale, et avenir professionnel.",
+    "support": "Soutenir le programme →",
+    "items": {
+      "school": {
+        "title": "Soutien Scolaire",
+        "desc": "Financement de scolarité, kits scolaires, cours de remise à niveau et cadeaux de fin d'année pour encourager chaque enfant à avancer vers l'excellence."
+      },
+      "wellbeing": {
+        "title": "Bien-être Émotionnel",
+        "desc": "Prise en charge émotionnelle personnalisée et sorties de découverte."
+      },
+      "training": {
+        "title": "Formation & Insertion",
+        "desc": "Accompagnement vers stages et emplois avec nos partenaires."
+      },
+      "inclusion": {
+        "title": "Inclusion Handicap",
+        "desc": "Accompagnement spécialisé pour les jeunes porteurs de handicap. Aucun enfant laissé de côté."
+      },
+      "leadership": {
+        "title": "Leadership & Citoyenneté",
+        "desc": "Actions communautaires pour former les leaders de demain."
+      }
+    }
+  },
+  "gallery": {
+    "title1": "L'album",
+    "title2": "Growing Together",
+    "desc": "Plongez dans le quotidien de notre association. Des sourires, des apprentissages et des moments inoubliables.",
+    "expand": "Agrandir ⤢",
+    "captions": {
+      "session": "Session de groupe 🙌",
+      "sortie_edu": "Sortie éducative",
+      "stade": "L'équipe au stade 🏟️",
+      "sourires": "Nos jeunes heureux 🎉",
+      "aeroport": "Sortie découverte ✈️",
+      "famille": "Notre grande famille 💛",
+      "sortie_ext": "Sortie de découverte",
+      "gouter": "Goûter en famille 🍓",
+      "partage": "Moment de partage camp des jeunes 🎉",
+      "orientation": "Orientation",
+      "cuisine": "Apprentissage culinaire 🍽️",
+      "gateaux": "Jeunes & gâteaux 🎂",
+      "benevoles": "L'équipe des bénévoles ✨",
+      "formation_reso": "Formation sur l'élevage avec l'association ReSo",
+      "depravation": "Séminaire sur la dépravation des mœurs",
+      "sourires_quotidien": "Sourires au quotidien",
+      "ethique": "Séminaire sur l'éthique et la morale"
+    }
+  },
+  "videos": {
+    "title1": "Vivre l'expérience en",
+    "title2": "vidéo",
+    "captions": {
+      "aeroport": "Cette sortie éducative avait pour objectif de permettre aux jeunes de comprendre le fonctionnement d'un aéroport, notamment ses différents services et le déroulement du trafic aérien.",
+      "zoo": "Cette sortie éducative au zoo avait pour objectif de permettre aux élèves de découvrir différentes espèces animales, d'observer leurs comportements et de comprendre les caractéristiques de leur habitat naturel."
+    }
+  },
+  "impact": {
+    "title1": "Notre",
+    "title2": "impact",
+    "title3": "sur le terrain",
+    "desc": "Les chiffres ne disent pas tout, mais ils montrent la force de notre communauté. Chaque nombre représente une vie touchée et un avenir transformé.",
+    "stats": {
+      "lives": "Vies impactées",
+      "volunteers": "Bénévoles actifs",
+      "schools": "Écoles partenaires",
+      "activities": "Activités / an"
+    }
+  },
+  "support": {
+    "badge": "Agir avec nous",
+    "title1": "Faites partie de la",
+    "title2": "ruche",
+    "desc": "Que ce soit par votre temps, vos compétences ou une contribution financière, votre soutien permet à Growing Together de continuer à transformer des vies à Yaoundé.",
+    "ways": {
+      "financial": {
+        "title": "Don Financier",
+        "desc": "Chaque franc compte. Vos dons financent directement la scolarité, la santé et les activités de nos jeunes.",
+        "action": "Faire un don →"
+      },
+      "volunteer": {
+        "title": "Devenir Bénévole",
+        "desc": "Rejoignez une équipe dynamique et engagée. Offrez votre temps et vos compétences pour encadrer les jeunes.",
+        "action": "Rejoindre l'équipe →"
+      },
+      "partner": {
+        "title": "Devenir Partenaire",
+        "desc": "Entreprises ou institutions, associez-vous à nous pour co-financer nos programmes d'insertion.",
+        "action": "Nous contacter →"
+      }
+    }
+  },
+  "contact": {
+    "title1": "Nous",
+    "title2": "contacter",
+    "desc": "Une question, une envie de collaborer ou de faire un don ? N'hésitez pas à nous envoyer un message.",
+    "form": {
+      "name": "Votre nom complet",
+      "email": "Adresse email",
+      "subject": "Sujet de votre message",
+      "message": "Comment pouvons-nous vous aider ?",
+      "submit": "Envoyer le message →"
+    },
+    "info": {
+      "address": "Yaoundé, Cameroun",
+      "phone": "+237 600 000 000",
+      "email": "contact@growing-together.cm",
+      "socials": "Suivez-nous"
+    }
+  },
+  "footer": {
+    "tagline": "Butiner, Grandir, S'épanouir.",
+    "rights": "© 2025 Growing Together - Association d'encadrement et d'épanouissement des jeunes, Yaoundé, Cameroun.",
+    "privacy": "Confidentialité",
+    "legal": "Mentions légales",
+    "developed_by": "By training lingua center ( TLC )"
+  }
+}

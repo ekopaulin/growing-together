@@ -1,0 +1,202 @@
+/* ── GALLERY SECTION ── */
+.gallery {
+  background: var(--off-white);
+  padding: 80px 0 100px;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+/* ── MARQUEE WRAPPER ── */
+.marqueeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); /* Full width bleed out of container */
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Fades on the edges for a premium look */
+.marqueeWrapper::before,
+.marqueeWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+.marqueeWrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--off-white), transparent);
+}
+.marqueeWrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--off-white), transparent);
+}
+
+.marqueeRow {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+}
+
+/* Pause on hover */
+.marqueeRow:hover .marqueeContent {
+  animation-play-state: paused;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 24px;
+}
+
+.scrollLeft {
+  animation: scrollLeftAnim 45s linear infinite;
+}
+
+.scrollRight {
+  animation: scrollRightAnim 45s linear infinite;
+}
+
+@keyframes scrollLeftAnim {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scrollRightAnim {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+/* ── PHOTO CARD ── */
+.photoCard {
+  position: relative;
+  width: 320px;
+  height: 240px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  background: #000;
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+/* On hover, the card slightly pops up and glows */
+.photoCard:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  z-index: 10;
+}
+
+.photoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease, transform 0.6s ease;
+  opacity: 0.9;
+}
+
+.photoCard:hover .photoImg {
+  opacity: 0.6;
+  transform: scale(1.08);
+}
+
+.captionOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 20px 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.photoCard:hover .captionOverlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.captionText {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.captionHint {
+  font-size: 0.75rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
+/* ── LIGHTBOX ── */
+.lightbox {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(10, 15, 26, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center;
+}
+.closeBtn {
+  position: absolute; top: 30px; right: 40px;
+  background: rgba(255,255,255,0.1); border: none;
+  color: var(--white); font-size: 2.5rem; line-height: 1;
+  width: 50px; height: 50px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: background 0.3s ease;
+}
+.closeBtn:hover { background: var(--gold); color: var(--navy); }
+
+.lightboxContent {
+  position: relative;
+  max-width: 90vw; max-height: 85vh;
+  display: flex; flex-direction: column;
+}
+.lightboxImg {
+  max-width: 100%; max-height: calc(85vh - 60px);
+  object-fit: contain; border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.lightboxBottom {
+  margin-top: 16px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.lightboxCaption {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.1rem;
+  color: var(--white);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .photoCard {
+    width: 260px;
+    height: 180px;
+  }
+  .marqueeWrapper::before, .marqueeWrapper::after {
+    width: 40px;
+  }
+  .closeBtn { top: 15px; right: 15px; width: 40px; height: 40px; font-size: 2rem; }
+  .captionOverlay {
+    opacity: 1;
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    padding: 20px 15px 10px;
+  }
+}

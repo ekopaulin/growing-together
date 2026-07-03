@@ -1,0 +1,9 @@
+.container {
+  display: inline;
+  color: var(--navy);
+}
+
+.container span {
+  display: inline-block;
+  white-space: pre-wrap; /* important to preserve spaces */
+}

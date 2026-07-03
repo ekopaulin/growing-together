@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "about": "About",
+    "programs": "Programs",
+    "gallery": "Gallery",
+    "impact": "Impact",
+    "contact": "Contact",
+    "donate": "Support Us"
+  },
+  "hero": {
+    "badge": "Mentoring & Empowerment",
+    "title": "Gather, Grow,<br/>Blossom.",
+    "subtitle": "Growing Together is a committed family in Yaoundé. We support youth towards academic excellence, emotional well-being, and social integration.",
+    "cta_donate": "Make a Donation 🐝",
+    "cta_discover": "Discover Our Actions"
+  },
+  "about": {
+    "badge": "🐝 Since 2021",
+    "title1": "A living hive",
+    "title2": "in Yaoundé",
+    "subtitle": "Growing Together was born from a simple conviction: no young person should face the storm alone. Our volunteers are themselves young people who give their time and resources.",
+    "stats_youth": "Youth supported<br/>each year",
+    "stats_years": "Years active",
+    "stats_volunteers": "Volunteers",
+    "believe1": "We believe in",
+    "believe2": "every youth",
+    "desc": "Growing Together is a youth mentoring and empowerment association. We step in where traditional structures and family/social safety nets are too fragile, to educate, support, and help them grow.",
+    "values": {
+      "solidarity": {
+        "label": "Authentic Solidarity",
+        "desc": "We help each other like a hive, everyone bringing their contribution."
+      },
+      "kindness": {
+        "label": "Kindness",
+        "desc": "Every young person is welcomed gently, without judgment or conditions."
+      },
+      "commitment": {
+        "label": "Volunteer Commitment",
+        "desc": "Our members give their personal time and resources."
+      },
+      "inclusion": {
+        "label": "Total Inclusion",
+        "desc": "No child left behind: disability, precariousness, vulnerability."
+      }
+    },
+    "cta_programs": "Our programs →",
+    "cta_support": "Support us"
+  },
+  "programs": {
+    "title1": "Our",
+    "title2": "5 action",
+    "title3": "programs",
+    "desc": "Because every young person is unique, we have developed a 360° approach to meet all needs: education, mental health, and professional future.",
+    "support": "Support this program →",
+    "items": {
+      "school": {
+        "title": "Academic Support",
+        "desc": "School fee funding, school kits, refresher courses, and end-of-year gifts to encourage each child towards excellence."
+      },
+      "wellbeing": {
+        "title": "Emotional Well-being",
+        "desc": "Personalized emotional care and discovery outings."
+      },
+      "training": {
+        "title": "Training & Integration",
+        "desc": "Guidance towards internships and employment with our partners."
+      },
+      "inclusion": {
+        "title": "Disability Inclusion",
+        "desc": "Specialized support for youth with disabilities. No child left behind."
+      },
+      "leadership": {
+        "title": "Leadership & Citizenship",
+        "desc": "Community actions to shape the leaders of tomorrow."
+      }
+    }
+  },
+  "gallery": {
+    "title1": "The",
+    "title2": "Growing Together Album",
+    "desc": "Dive into the daily life of our association. Smiles, learning, and unforgettable moments.",
+    "expand": "Expand ⤢",
+    "captions": {
+      "session": "Group session 🙌",
+      "sortie_edu": "Educational outing",
+      "stade": "The team at the stadium 🏟️",
+      "sourires": "Our happy youth 🎉",
+      "aeroport": "Discovery outing ✈️",
+      "famille": "Our big family 💛",
+      "sortie_ext": "Discovery outing",
+      "gouter": "Family snack time 🍓",
+      "partage": "Youth camp sharing moment 🎉",
+      "orientation": "Orientation",
+      "cuisine": "Culinary learning 🍽️",
+      "gateaux": "Youth & cakes 🎂",
+      "benevoles": "The volunteer team ✨",
+      "formation_reso": "Livestock training with ReSo association",
+      "depravation": "Seminar on moral depravity",
+      "sourires_quotidien": "Everyday smiles",
+      "ethique": "Seminar on ethics and morals"
+    }
+  },
+  "videos": {
+    "title1": "Live the experience on",
+    "title2": "video",
+    "captions": {
+      "aeroport": "This educational outing aimed to allow young people to understand how an airport works, including its various services and the flow of air traffic.",
+      "zoo": "This educational outing to the zoo aimed to allow students to discover different animal species, observe their behavior, and understand the characteristics of their natural habitat."
+    }
+  },
+  "impact": {
+    "title1": "Our",
+    "title2": "impact",
+    "title3": "in the field",
+    "desc": "Numbers don't tell everything, but they show the strength of our community. Each number represents a life touched and a future transformed.",
+    "stats": {
+      "lives": "Lives impacted",
+      "volunteers": "Active volunteers",
+      "schools": "Partner schools",
+      "activities": "Activities / year"
+    }
+  },
+  "support": {
+    "badge": "Act with us",
+    "title1": "Be part of the",
+    "title2": "hive",
+    "desc": "Whether through your time, your skills, or a financial contribution, your support allows Growing Together to continue transforming lives in Yaoundé.",
+    "ways": {
+      "financial": {
+        "title": "Financial Donation",
+        "desc": "Every franc counts. Your donations directly fund the education, health, and activities of our youth.",
+        "action": "Make a donation →"
+      },
+      "volunteer": {
+        "title": "Become a Volunteer",
+        "desc": "Join a dynamic and committed team. Offer your time and skills to mentor the youth.",
+        "action": "Join the team →"
+      },
+      "partner": {
+        "title": "Become a Partner",
+        "desc": "Companies or institutions, partner with us to co-fund our integration programs.",
+        "action": "Contact us →"
+      }
+    }
+  },
+  "contact": {
+    "title1": "Contact",
+    "title2": "us",
+    "desc": "A question, a desire to collaborate or make a donation? Do not hesitate to send us a message.",
+    "form": {
+      "name": "Your full name",
+      "email": "Email address",
+      "subject": "Subject of your message",
+      "message": "How can we help you?",
+      "submit": "Send message →"
+    },
+    "info": {
+      "address": "Yaoundé, Cameroon",
+      "phone": "+237 600 000 000",
+      "email": "contact@growing-together.cm",
+      "socials": "Follow us"
+    }
+  },
+  "footer": {
+    "tagline": "Gather, Grow, Blossom.",
+    "rights": "© 2025 Growing Together - Youth Mentoring and Empowerment Association, Yaoundé, Cameroon.",
+    "privacy": "Privacy Policy",
+    "legal": "Legal Notice",
+    "developed_by": "By training lingua center ( TLC )"
+  }
+}
