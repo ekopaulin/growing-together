@@ -215,4 +215,5 @@
   .wideLeft { flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
   
   .bentoLarge { grid-row: span 1; min-height: 450px; }
+  .bentoLinkGold { padding: 10px 18px; font-size: 0.75rem; white-space: nowrap; width: auto; }
 }

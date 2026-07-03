@@ -51,6 +51,7 @@ ul { list-style: none; }
 .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 @media (max-width: 768px) {
   .container { padding: 0 20px; }
+  .btn { padding: 12px 24px; font-size: 0.85rem; }
 }
 .section { padding: 100px 0; }
 .section-alt { background: var(--off-white); }
