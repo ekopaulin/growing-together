@@ -11,17 +11,17 @@
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.brand { display: flex; align-items: center; gap: 14px; }
+.brand { display: flex; align-items: center; gap: 18px; }
 .logo {
-  width: 44px; height: 44px;
+  width: 76px; height: 76px;
   border-radius: 50%; object-fit: cover;
   border: 2px solid rgba(255,255,255,0.15);
 }
 .name {
   font-family: var(--font-display); font-weight: 900;
-  font-size: 1.1rem; color: var(--white);
+  font-size: 1.4rem; color: var(--white);
 }
-.tagline { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 2px; }
+.tagline { font-size: 0.9rem; color: rgba(255,255,255,0.45); margin-top: 2px; }
 
 .nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
 .link {

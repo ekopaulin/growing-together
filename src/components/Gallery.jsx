@@ -18,6 +18,8 @@ export default function Gallery() {
     { src: '/images/Seminaire sur la depravation des moeus.jpeg', caption: 'Séminaire sur les mœurs' },
     { src: '/images/selfie_jeunes.jpg', caption: 'Sourires au quotidien' },
     { src: '/images/Seminaire sur l\'ethique et la morale.jpeg', caption: "Séminaire sur l'éthique" },
+    { src: '/images/Distribution des kits scolaires.jpeg', caption: 'Distribution des kits 🎒' },
+    { src: '/images/Remise des kits scolaires.jpeg', caption: 'Remise des kits scolaires ✨' },
   ];
 
   const half = Math.ceil(photos.length / 2);

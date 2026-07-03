@@ -8,7 +8,7 @@ export default function Videos() {
     {
       id: 'aeroport',
       title: 'Sortie découverte : Aéroport',
-      src: '/videos/WhatsApp Video 2026-06-27 at 13.29.39.mp4',
+      src: '/videos/video1.mp4',
       poster: '/images/hero_groupe_aeroport.jpg',
       desc: 'Cette sortie éducative avait pour objectif de permettre aux jeunes de comprendre le fonctionnement d\'un aéroport, notamment ses différents services et le déroulement du trafic aérien.',
       icon: '✈️'
@@ -16,7 +16,7 @@ export default function Videos() {
     {
       id: 'zoo',
       title: 'Sortie éducative au Zoo',
-      src: '/videos/WhatsApp Video 2026-06-27 at 13.29.39 (1).mp4',
+      src: '/videos/video2.mp4',
       poster: '/images/sortie educative.jpg',
       desc: 'Cette sortie éducative au zoo avait pour objectif de permettre aux élèves de découvrir différentes espèces animales, d\'observer leurs comportements et de comprendre les caractéristiques de leur habitat naturel.',
       icon: '🦒'

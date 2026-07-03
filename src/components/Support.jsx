@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Support.module.css';
 
 const GOAL_KITS = 150;
-const KIT_PRICE = 20000;
-const GOAL_TOTAL = GOAL_KITS * KIT_PRICE; // 3 000 000 FCFA
+const KIT_PRICE = 30;
+const GOAL_TOTAL = GOAL_KITS * KIT_PRICE; // 4500 €
 const KITS_RAISED_SO_FAR = 23; // à mettre à jour manuellement
 const AMOUNT_RAISED = KITS_RAISED_SO_FAR * KIT_PRICE;
 
@@ -20,29 +20,30 @@ const IconBank = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="non
 export default function Support() {
   const sectionRef = useRef(null);
   const [selectedIdx, setSelectedIdx] = useState(1);
+  const [showMomo, setShowMomo] = useState(false);
   
   const amounts = [
     {
-      fcfa: '10 000',
+      euro: '15',
       label: '½ kit scolaire',
       desc: 'Contribution partielle vers un kit complet pour un enfant',
       icon: <IconBook />,
     },
     {
-      fcfa: '20 000',
+      euro: '30',
       label: '1 kit scolaire complet',
       desc: 'Cahiers, stylos, règle, compas et sac : tout ce qu\'il faut pour la rentrée',
       icon: <IconBackpack />,
       popular: true,
     },
     {
-      fcfa: '50 000',
+      euro: '75',
       label: '2 kits + frais scolaires',
       desc: '2 kits complets et une contribution aux frais d\'inscription',
       icon: <IconGraduation />,
     },
     {
-      fcfa: '100 000',
+      euro: '150',
       label: '5 kits scolaires',
       desc: 'Permettez à 5 enfants de démarrer la rentrée avec le sourire',
       icon: <IconHeart />,
@@ -98,14 +99,15 @@ export default function Support() {
               <span className={styles.gold}>change une vie</span>
             </h2>
             <p className={`${styles.body} reveal delay-2`}>
-              Growing Together fonctionne grâce à la générosité de personnes comme vous. Votre contribution, quelle que soit sa taille, permet à un jeune de Yaoundé d'avoir accès à l'éducation, à l'épanouissement et à l'avenir qu'il mérite.
+              Growing Together fonctionne grâce à la générosité de personnes comme vous. Votre contribution, quelle que soit sa taille, permet à un jeune d'avoir accès à l'éducation, à l'épanouissement et à l'avenir qu'il mérite. <br/><br/>
+              <strong>Les dons en nature (fournitures scolaires, vêtements, etc.) sont également les bienvenus !</strong> N'hésitez pas à nous contacter pour les organiser.
             </p>
 
             {/* Active amount description */}
             <div className={`${styles.selectedInfo} reveal delay-3`}>
               <div className={styles.selectedIcon}>{amounts[selectedIdx >= 0 ? selectedIdx : 0].icon}</div>
               <div>
-                <strong>{selectedIdx >= 0 ? amounts[selectedIdx].fcfa : '...'} FCFA</strong>
+                <strong>{selectedIdx >= 0 ? amounts[selectedIdx].euro : '...'} €</strong>
                 <p>{selectedIdx >= 0 ? amounts[selectedIdx].desc : 'Un don libre pour soutenir nos actions.'}</p>
               </div>
             </div>
@@ -114,10 +116,23 @@ export default function Support() {
             <div className={`${styles.paymentModes} reveal delay-4`}>
               <p className={styles.paymentLabel}>Modes de paiement acceptés</p>
               <div className={styles.paymentBadges}>
-                <span className={styles.payBadge}><IconPhone /> Mobile Money</span>
+                <span 
+                  className={`${styles.payBadge} ${styles.clickableBadge}`}
+                  onClick={() => setShowMomo(!showMomo)}
+                >
+                  <IconPhone /> Mobile Money
+                </span>
                 <span className={styles.payBadge}><IconCreditCard /> PayPal</span>
                 <span className={styles.payBadge}><IconBank /> Virement</span>
               </div>
+              
+              {showMomo && (
+                <div className={styles.momoNumbers}>
+                  <p>🟠 <strong>Orange Money :</strong> +237 6 94 44 26 04</p>
+                  <p>🟡 <strong>MTN MoMo :</strong> +237 6 72 30 69 16</p>
+                </div>
+              )}
+
               <p className={styles.secureNote}>🔒 Paiement 100% sécurisé</p>
             </div>
           </div>
@@ -144,7 +159,7 @@ export default function Support() {
                 />
               </div>
               <p className={styles.campaignSub}>
-                1 kit = <strong>20 000 FCFA</strong> · Objectif total : {(GOAL_TOTAL / 1000000).toFixed(1)} M FCFA
+                1 kit = <strong>30 €</strong> · Objectif total : {GOAL_TOTAL} €
               </p>
             </div>
             <div className={styles.pickerHeader}>
@@ -162,7 +177,7 @@ export default function Support() {
                   {a.popular && <span className={styles.popularTag}>⭐ Populaire</span>}
                   <span className={styles.amountIcon}>{a.icon}</span>
                   <span className={styles.amountFcfa}>
-                    {a.fcfa} <small>FCFA</small>
+                    {a.euro} <small>€</small>
                   </span>
                   <span className={styles.amountLabel}>{a.label}</span>
                 </button>
@@ -171,18 +186,18 @@ export default function Support() {
 
             {/* Custom amount */}
             <div className={styles.customAmount}>
-              <label htmlFor="custom-amount">Ou saisissez un montant libre (FCFA)</label>
+              <label htmlFor="custom-amount">Ou saisissez un montant libre (€)</label>
               <input
                 id="custom-amount"
                 type="number"
-                min="500"
-                placeholder="Ex : 15 000"
+                min="5"
+                placeholder="Ex : 20"
                 onFocus={() => setSelectedIdx(-1)}
               />
             </div>
 
             <button className={`btn btn-gold ${styles.ctaBtn}`}>
-              Faire un don de {selectedIdx >= 0 ? `${amounts[selectedIdx].fcfa} FCFA` : '...'} →
+              Faire un don de {selectedIdx >= 0 ? `${amounts[selectedIdx].euro} €` : '...'} →
             </button>
 
             <p className={styles.secureSmall}>
