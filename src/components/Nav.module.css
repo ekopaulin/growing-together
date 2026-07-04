@@ -98,7 +98,7 @@
 }
 
 @media (max-width: 768px) {
-  .inner { height: 60px; }
+  .inner { height: 60px; padding: 0 20px; }
   .nav.solid {
     top: 12px;
     width: calc(100% - 32px);
