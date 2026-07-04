@@ -209,7 +209,6 @@ export default function Support() {
                 <p style={{marginBottom: '10px', fontSize: '0.9rem', color: 'var(--gray-600)'}}>Envoyez votre don directement sur l'un de ces numéros :</p>
                 <p>🟠 <strong>Orange Money :</strong> +237 6 94 44 26 04</p>
                 <p>🟡 <strong>MTN MoMo :</strong> +237 6 72 30 69 16</p>
-                <p style={{marginTop: '10px', fontSize: '0.85rem', color: 'var(--gray-500)'}}>Nom du compte : Growing Together</p>
               </div>
             )}
 
