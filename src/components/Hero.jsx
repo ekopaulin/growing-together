@@ -36,8 +36,6 @@ export default function Hero() {
             <a href="#soutenir" className="btn btn-gold">Faire un don 🐝</a>
             <a href="#contact" className="btn btn-outline">Devenir bénévole</a>
           </div>
-
-          </div>
         </div>
 
         {/* Stats bar moved outside for layout flexibility */}
