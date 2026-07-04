@@ -320,6 +320,8 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
+  .support { padding: 0 0 50px; }
+  .impactBand { margin-bottom: 40px; }
   .grid { grid-template-columns: 1fr; gap: 40px; }
   .impactGrid { justify-content: flex-start; }
 }

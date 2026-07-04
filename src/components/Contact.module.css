@@ -249,6 +249,9 @@
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; gap: 28px; }
   .infoPhoto { height: 180px; }
+  .contact { padding: 40px 0 50px 0; }
+  .separatorContainer { margin: 0 auto 30px; }
+  .sectionHeader { margin-bottom: 40px; }
 }
 @media (max-width: 540px) {
   .formCard { padding: 28px 20px; }

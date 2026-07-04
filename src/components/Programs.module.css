@@ -206,7 +206,9 @@
 }
 
 @media (max-width: 768px) {
-  .header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .programs { padding: 40px 0 50px 0; }
+  .separatorContainer { margin: 0 auto 30px; }
+  .header { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 40px; }
   .bentoGrid { grid-template-columns: 1fr; grid-auto-rows: auto; }
   .bentoLarge, .bentoWide, .bentoSmall { grid-column: span 1; }
   .bentoSmall { padding: 20px; }
