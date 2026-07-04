@@ -37,7 +37,11 @@ export default function Hero() {
             <a href="#contact" className="btn btn-outline">Devenir bénévole</a>
           </div>
 
-          {/* Stats bar integrated in glass */}
+          </div>
+        </div>
+
+        {/* Stats bar moved outside for layout flexibility */}
+        <div className={styles.statsBarWrapper}>
           <div className={styles.statsBar}>
             <div className={styles.statItem}>
               <span className={styles.statNum}><AnimatedCounter end="100" suffix="+" /></span>

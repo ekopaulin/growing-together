@@ -50,7 +50,9 @@
 .inner {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 60px;
+  grid-template-rows: auto auto;
+  column-gap: 60px;
+  row-gap: 40px;
   align-items: center;
   padding-top: 60px;
   padding-bottom: 80px;
@@ -144,6 +146,10 @@
   display: block;
 }
 
+.glassCard { grid-column: 1; grid-row: 1; }
+.statsBarWrapper { grid-column: 1; grid-row: 2; width: 100%; align-self: start; }
+.photoCol { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+
 /* ── RIGHT PHOTO COL ── */
 .photoCol {
   position: relative;
@@ -231,13 +237,15 @@
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .inner {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     min-height: auto;
     gap: 60px;
     padding-top: 40px;
     padding-bottom: 60px;
   }
   .glassCard {
+    order: 1;
     background: transparent;
     border: none;
     box-shadow: none;
@@ -246,9 +254,17 @@
     padding: 20px 0;
     align-items: center;
     text-align: center;
+    width: 100%;
+  }
+  .photoCol { 
+    order: 2; 
+    height: 400px; max-width: 500px; margin: 0 auto; width: 100%; 
+  }
+  .statsBarWrapper {
+    order: 3;
+    width: 100%;
   }
   .actions { justify-content: center; }
-  .photoCol { height: 400px; max-width: 500px; margin: 0 auto; width: 100%; }
   .mainCard { width: 80%; right: 0; }
   .accentCard { width: 50%; left: 0; bottom: -20px; }
   .floatBadge { left: 0; top: 10px; }
