@@ -21,6 +21,7 @@ export default function Support() {
   const sectionRef = useRef(null);
   const [selectedIdx, setSelectedIdx] = useState(1);
   const [showMomo, setShowMomo] = useState(false);
+  const [showPaymentInfo, setShowPaymentInfo] = useState(false);
   
   const amounts = [
     {
@@ -196,9 +197,21 @@ export default function Support() {
               />
             </div>
 
-            <button className={`btn btn-gold ${styles.ctaBtn}`}>
+            <button 
+              className={`btn btn-gold ${styles.ctaBtn}`}
+              onClick={() => setShowPaymentInfo(!showPaymentInfo)}
+            >
               Faire un don de {selectedIdx >= 0 ? `${amounts[selectedIdx].euro} €` : '...'} →
             </button>
+
+            {showPaymentInfo && (
+              <div className={styles.momoNumbersCTA}>
+                <p style={{marginBottom: '10px', fontSize: '0.9rem', color: 'var(--gray-600)'}}>Envoyez votre don directement sur l'un de ces numéros :</p>
+                <p>🟠 <strong>Orange Money :</strong> +237 6 94 44 26 04</p>
+                <p>🟡 <strong>MTN MoMo :</strong> +237 6 72 30 69 16</p>
+                <p style={{marginTop: '10px', fontSize: '0.85rem', color: 'var(--gray-500)'}}>Nom du compte : Growing Together</p>
+              </div>
+            )}
 
             <p className={styles.secureSmall}>
               🔒 Don sécurisé · Association déclarée · Reçu disponible sur demande
