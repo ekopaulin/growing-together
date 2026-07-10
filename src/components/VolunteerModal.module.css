@@ -85,29 +85,7 @@
   line-height: 1.65;
 }
 
-.leftPerks {
-  margin-top: auto;
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
 
-.perk {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.6);
-}
-
-.perkDot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--gold);
-  flex-shrink: 0;
-}
 
 /* ── RIGHT PANEL ── */
 .rightPanel {
@@ -302,7 +280,6 @@
   .bee { margin-bottom: 0; font-size: 1.6rem; }
   .leftTitle { font-size: 1.1rem; margin-bottom: 4px; }
   .leftSub { font-size: 0.8rem; }
-  .leftPerks { display: none; }
   
   .rightPanel { 
     padding: 24px; 

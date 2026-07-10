@@ -80,20 +80,7 @@ export default function VolunteerModal({ isOpen, onClose }) {
             </p>
           </div>
 
-          <ul className={styles.leftPerks}>
-            <li className={styles.perk}>
-              <span className={styles.perkDot} />
-              Réponse sous 48h
-            </li>
-            <li className={styles.perk}>
-              <span className={styles.perkDot} />
-              100% bénévole, 100% humain
-            </li>
-            <li className={styles.perk}>
-              <span className={styles.perkDot} />
-              Impact direct à Yaoundé
-            </li>
-          </ul>
+
         </div>
 
         {/* ── RIGHT PANEL ── */}
