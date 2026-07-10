@@ -76,7 +76,7 @@ export default function VolunteerModal({ isOpen, onClose }) {
             <span className={styles.bee}>🐝</span>
             <h2 className={styles.leftTitle}>Rejoignez la ruche</h2>
             <p className={styles.leftSub}>
-              Bénévoles passionnés, professionnels engagés — chaque talent a sa place chez Growing Together.
+              Bénévoles passionnés, professionnels engagés, chaque talent a sa place chez Growing Together.
             </p>
           </div>
 
