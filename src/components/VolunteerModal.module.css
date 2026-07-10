@@ -20,8 +20,8 @@
 
 /* ── MODAL SHELL (split layout) ── */
 .modal {
-  display: grid;
-  grid-template-columns: 280px 1fr;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   max-width: 780px;
   max-height: 92vh;
@@ -30,6 +30,7 @@
   box-shadow: 0 40px 100px rgba(0,0,0,0.3);
   animation: slideUp 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   position: relative;
+  background: var(--white);
 }
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(24px); }
@@ -45,7 +46,8 @@
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  min-height: 0; /* required for grid children to respect max-height */
+  width: 280px;
+  flex-shrink: 0;
 }
 
 /* Subtle background accent */
@@ -112,7 +114,8 @@
   background: var(--white);
   padding: 48px 44px 40px;
   overflow-y: auto;
-  min-height: 0; /* critical: lets grid child scroll within max-height */
+  flex: 1;
+  min-height: 0; /* critical: lets flex child scroll within max-height */
   scrollbar-width: thin;
   scrollbar-color: var(--gray-200) transparent;
   display: flex;
@@ -284,21 +287,27 @@
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {
   .modal {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     max-height: 95vh;
   }
   .leftPanel {
-    padding: 28px 28px 20px;
+    width: 100%;
+    padding: 24px;
     flex-direction: row;
     align-items: center;
     gap: 16px;
+    flex-shrink: 0;
   }
   .leftPanel::before { display: none; }
   .bee { margin-bottom: 0; font-size: 1.6rem; }
   .leftTitle { font-size: 1.1rem; margin-bottom: 4px; }
   .leftSub { font-size: 0.8rem; }
   .leftPerks { display: none; }
-  .rightPanel { padding: 28px 24px; }
+  
+  .rightPanel { 
+    padding: 24px; 
+    flex: 1; 
+  }
   .row { grid-template-columns: 1fr; }
   .formTitle { font-size: 1.05rem; margin-bottom: 20px; }
 }
