@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
+  overflow-y: auto; /* overlay itself scrolls if modal is taller than screen */
   animation: fadeIn 0.2s ease forwards;
 }
 @keyframes fadeIn {
@@ -44,6 +45,7 @@
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  min-height: 0; /* required for grid children to respect max-height */
 }
 
 /* Subtle background accent */
@@ -108,8 +110,9 @@
 /* ── RIGHT PANEL ── */
 .rightPanel {
   background: var(--white);
-  padding: 48px 44px;
+  padding: 48px 44px 40px;
   overflow-y: auto;
+  min-height: 0; /* critical: lets grid child scroll within max-height */
   scrollbar-width: thin;
   scrollbar-color: var(--gray-200) transparent;
   display: flex;
