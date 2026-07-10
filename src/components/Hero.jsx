@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import styles from './Hero.module.css';
-import AnimatedCounter from './ui/AnimatedCounter';
 
 export default function Hero() {
   const sectionRef = useRef(null);
@@ -38,27 +37,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Stats bar moved outside for layout flexibility */}
-        <div className={styles.statsBarWrapper}>
-          <div className={styles.statsBar}>
-            <div className={styles.statItem}>
-              <span className={styles.statNum}><AnimatedCounter end="100" suffix="+" /></span>
-              <span className={styles.statLabel}>Jeunes accompagnés</span>
-            </div>
-            <div className={styles.statItem}>
-              <span className={styles.statNum}><AnimatedCounter end="4" suffix=" ans" /></span>
-              <span className={styles.statLabel}>D'existence</span>
-            </div>
-            <div className={styles.statItem}>
-              <span className={styles.statNum}><AnimatedCounter end="5" /></span>
-              <span className={styles.statLabel}>Programmes</span>
-            </div>
-            <div className={styles.statItem}>
-              <span className={styles.statNum}><AnimatedCounter end="100" suffix="%" /></span>
-              <span className={styles.statLabel}>Bénévoles</span>
-            </div>
-          </div>
-        </div>
+
 
         {/* RIGHT — Photo composition */}
         <div className={`${styles.photoCol} reveal-right delay-2`}>

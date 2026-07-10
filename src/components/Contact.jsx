@@ -36,11 +36,14 @@ const contactInfo = [
   },
 ];
 
+const FacebookIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
 const socials = [
-  { label: 'Facebook', icon: 'f', color: '#1877F2', url: 'https://www.facebook.com/share/17rvQzVEAF/' },
-  { label: 'Instagram', icon: '▲', color: '#E1306C', url: '#' },
-  { label: 'YouTube', icon: '▶', color: '#FF0000', url: '#' },
-  { label: 'WhatsApp', icon: '●', color: '#25D366', url: '#' },
+  { label: 'Facebook', icon: <FacebookIcon />, color: '#1877F2', url: 'https://www.facebook.com/share/17rvQzVEAF/' },
 ];
 
 export default function Contact() {
