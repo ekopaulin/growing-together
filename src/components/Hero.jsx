@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from './Hero.module.css';
 
-export default function Hero() {
+export default function Hero({ onOpenVolunteer }) {
   const sectionRef = useRef(null);
   
   useEffect(() => {
@@ -33,7 +33,13 @@ export default function Hero() {
 
           <div className={styles.actions}>
             <a href="#soutenir" className="btn btn-gold">Faire un don 🐝</a>
-            <a href="#contact" className="btn btn-outline">Devenir bénévole</a>
+            <button
+              type="button"
+              className="btn btn-outline"
+              onClick={onOpenVolunteer}
+            >
+              Devenir bénévole
+            </button>
           </div>
         </div>
 

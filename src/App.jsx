@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './index.css';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
@@ -10,8 +10,11 @@ import Impact from './components/Impact';
 import Support from './components/Support';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import VolunteerModal from './components/VolunteerModal';
 
 export default function App() {
+  const [showVolunteer, setShowVolunteer] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       document.documentElement.style.setProperty('--scroll-y', window.pageYOffset || window.scrollY);
@@ -25,7 +28,7 @@ export default function App() {
     <>
       <Nav />
       <main>
-        <Hero />
+        <Hero onOpenVolunteer={() => setShowVolunteer(true)} />
         <About />
         <Programs />
         <Gallery />
@@ -35,6 +38,13 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+
+      {/* Volunteer Modal — rendered at root level */}
+      <VolunteerModal
+        isOpen={showVolunteer}
+        onClose={() => setShowVolunteer(false)}
+      />
     </>
   );
 }
+
